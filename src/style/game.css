@@ -1,0 +1,21 @@
+.game {
+  width: 1800px;
+  height: 900px;
+  background-color: teal;
+  float: left;
+}
+.players {
+  width: 450px;
+  float: left;
+}
+
+.board {
+  width: 900px;
+  height: 900px;
+  float: left;
+}
+
+.info {
+  width: 450px;
+  float: left;
+}
