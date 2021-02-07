@@ -32,3 +32,7 @@
 .gametile:hover {
   background-color: white;
 }
+
+.player {
+  background-color: red;
+}

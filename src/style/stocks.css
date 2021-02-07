@@ -1,0 +1,21 @@
+.stocks {
+  width: 500px;
+  height: 600px;
+  margin: 100px 150px;
+  background-color: tomato;
+}
+
+.stocks .header {
+  height: 50px;
+  background-color: turquoise;
+}
+
+.stocks .body {
+  height: 500px;
+  background-color: lightgray;
+}
+
+.stocks .footer {
+  height: 50px;
+  background-color: black;
+}

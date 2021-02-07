@@ -3,7 +3,11 @@ import Player from "./Player";
 const Players = () => {
   return (
     <div>
-      <Player />
+      <div className="margin"></div>
+      <div>
+        <Player />
+      </div>
+      <div className="margin"></div>
     </div>
   );
 };

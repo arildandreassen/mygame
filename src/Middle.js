@@ -1,4 +1,5 @@
 import GameTile from "./GameTile";
+import Stocks from "./Stocks";
 
 const Middle = () => {
   return (
@@ -19,7 +20,9 @@ const Middle = () => {
           <GameTile tileId="45" />
           <GameTile tileId="44" />
         </div>
-        <div className="center"></div>
+        <div className="center">
+          <Stocks />
+        </div>
         <div className="vertical">
           <GameTile tileId="16" />
           <GameTile tileId="17" />

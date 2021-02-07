@@ -4,6 +4,7 @@
   background-color: teal;
   float: left;
 }
+
 .players {
   width: 450px;
   float: left;
@@ -16,6 +17,12 @@
 }
 
 .info {
+  width: 450px;
+  float: left;
+}
+
+.margin {
+  height: 60px;
   width: 450px;
   float: left;
 }
