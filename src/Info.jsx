@@ -1,9 +1,10 @@
+import React from "react";
 import Investments from "./Investments";
 import Taxes from "./Taxes";
 import Chance from "./Chance";
 import Dice from "./Dice";
 
-const Info = () => {
+const Info = (props) => {
   return (
     <div className="info">
       <div className="margin"></div>
@@ -11,7 +12,7 @@ const Info = () => {
         <Chance />
         <Investments />
         <Taxes />
-        <Dice />
+        <Dice updateLocation={props.updateLocation} />
       </div>
       <div className="margin"></div>
     </div>

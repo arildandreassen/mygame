@@ -1,7 +1,7 @@
 const Player = () => {
   return (
     <div className="player">
-      <h3>Arild Andreassen</h3>
+      <h3>Player name</h3>
     </div>
   );
 };
