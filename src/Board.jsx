@@ -5,7 +5,6 @@ import Middle from "./Middle";
 import Bottom from "./Bottom";
 
 const Board = (props) => {
-  console.log(props.location);
   return (
     <div className="board">
       <Top location={props.location} />

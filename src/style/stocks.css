@@ -17,5 +17,15 @@
 
 .stocks .footer {
   height: 50px;
-  background-color: black;
+  background-color: turquoise;
+}
+
+.stocks table {
+  margin: auto;
+}
+
+.stockgraph td {
+  height: 29px;
+  width: 62px;
+  background-color: chocolate;
 }
