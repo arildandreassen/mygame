@@ -8,6 +8,8 @@
 .stocks .header {
   height: 50px;
   background-color: turquoise;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .stocks .body {
@@ -22,4 +24,15 @@
 
 .stocks table {
   margin: auto;
+}
+
+.footer .markets {
+  margin: auto;
+}
+
+.markets td {
+  height: 27px;
+  width: 62px;
+  font-size: 0.7rem;
+  background-color: blanchedalmond;
 }

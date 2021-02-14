@@ -1,0 +1,18 @@
+.priceMarker td {
+  height: 27px;
+  width: 62px;
+  background-color: chocolate;
+}
+
+.priceMarker .initial {
+  background-color: crimson;
+}
+
+.marker {
+  height: 25px;
+  width: 25px;
+  background-color: black;
+  border-radius: 50%;
+  display: flex;
+  margin: auto;
+}
