@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Board from "./Board";
-import Players from "./Players";
-import Info from "./Info";
+import BoardSection from "./BoardSection";
+import PlayerSection from "./PlayerSection";
+import InfoSection from "./InfoSection";
 
 const Game = () => {
   const [location, setLocation] = useState(1);
@@ -22,13 +22,13 @@ const Game = () => {
   return (
     <div className="game">
       <div className="players">
-        <Players />
+        <PlayerSection />
       </div>
       <div>
-        <Board location={location} />
+        <BoardSection location={location} />
       </div>
       <div>
-        <Info updateLocation={updateLocation} />
+        <InfoSection updateLocation={updateLocation} />
       </div>
     </div>
   );

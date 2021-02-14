@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 import "../../style/wallstreet";
-import Top from "./Top";
-import Middle from "./Middle";
-import Bottom from "./Bottom";
+import TopBoard from "./TopBoard";
+import MiddleBoard from "./MiddleBoard";
+import BottomBoard from "./BottomBoard";
 
-const Board = (props) => {
+const BoardSection = (props) => {
   const [hoveringState, setHoveringState] = useState({
     isHovering: false,
     tile: null,
@@ -21,19 +21,19 @@ const Board = (props) => {
 
   return (
     <div className="board">
-      <Top
+      <TopBoard
         location={props.location}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       />
-      <Middle
+      <MiddleBoard
         location={props.location}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       />
-      <Bottom
+      <BottomBoard
         location={props.location}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
@@ -43,4 +43,4 @@ const Board = (props) => {
   );
 };
 
-export default Board;
+export default BoardSection;

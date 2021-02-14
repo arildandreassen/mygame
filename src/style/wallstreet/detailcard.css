@@ -1,5 +1,366 @@
+/* const left = {
+  16: "600px",
+  17: "600px",
+  18: "600px",
+  19: "600px",
+  20: "600px",
+  21: "600px",
+  22: "600px",
+  23: "600px",
+  24: "600px",
+  25: "600px",
+  26: "600px",
+  27: "600px",
+  28: "600px",
+  29: "600px",
+  30: "600px",
+  31: "600px",
+  32: "600px",
+  33: "540px",
+  34: "480px",
+  35: "420px",
+  36: "360px",
+  37: "300px",
+  38: "240px",
+  39: "180px",
+  40: "120px",
+  41: "60px",
+  42: "0px",
+}; */
+
+/* export const calculateVerticalPixels = (tile) => {
+  const top = {
+    16: "0px",
+    17: "60px",
+    18: "120px",
+    19: "180px",
+    20: "240px",
+    21: "300px",
+    22: "360px",
+    23: "420px",
+    24: "480px",
+    25: "540px",
+    26: "540px",
+    27: "540px",
+    28: "540px",
+    29: "540px",
+    30: "540px",
+    31: "540px",
+    32: "540px",
+    33: "540px",
+    34: "540px",
+    35: "540px",
+    36: "540px",
+    37: "540px",
+    38: "540px",
+    39: "540px",
+    40: "540px",
+    41: "540px",
+    42: "540px",
+    43: "540px",
+    44: "540px",
+    45: "540px",
+    46: "540px",
+    47: "540px",
+    48: "480px",
+    49: "420px",
+    50: "360px",
+    51: "300px",
+    52: "240px",
+    53: "180px",
+    54: "120px",
+    55: "60px",
+    56: "0px",
+  }; */
+
 .detailCard {
   height: 240px;
   width: 180px;
+  position: relative;
   background-color: blueviolet;
+  opacity: 0%;
+}
+
+.detailCard.tile {
+  opacity: 100%;
+}
+
+.detailCard.tile1 {
+  left: 0px;
+  top: 0px;
+}
+
+.detailCard.tile2 {
+  left: 0px;
+  top: 0px;
+}
+
+.detailCard.tile3 {
+  left: 60px;
+  top: 0px;
+}
+
+.detailCard.tile4 {
+  left: 120px;
+  top: 0px;
+}
+
+.detailCard.tile5 {
+  left: 180px;
+  top: 0px;
+}
+
+.detailCard.tile6 {
+  left: 240px;
+  top: 0px;
+}
+
+.detailCard.tile7 {
+  left: 300px;
+  top: 0px;
+}
+
+.detailCard.tile8 {
+  left: 360px;
+  top: 0px;
+}
+
+.detailCard.tile9 {
+  left: 420px;
+  top: 0px;
+}
+
+.detailCard.tile10 {
+  left: 480px;
+  top: 0px;
+}
+
+.detailCard.tile11 {
+  left: 540px;
+  top: 0px;
+}
+
+.detailCard.tile12 {
+  left: 600px;
+  top: 0px;
+}
+
+.detailCard.tile13 {
+  left: 600px;
+  top: 0px;
+}
+
+.detailCard.tile14 {
+  left: 600px;
+  top: 0px;
+}
+
+.detailCard.tile15 {
+  left: 600px;
+  top: 0px;
+}
+
+.detailCard.tile16 {
+  left: 600px;
+  top: 0px;
+}
+
+.detailCard.tile17 {
+  left: 600px;
+  top: 60px;
+}
+
+.detailCard.tile18 {
+  left: 600px;
+  top: 120px;
+}
+
+.detailCard.tile19 {
+  left: 600px;
+  top: 180px;
+}
+
+.detailCard.tile20 {
+  left: 600px;
+  top: 240px;
+}
+
+.detailCard.tile21 {
+  left: 600px;
+  top: 300px;
+}
+
+.detailCard.tile22 {
+  left: 600px;
+  top: 360px;
+}
+
+.detailCard.tile23 {
+  left: 600px;
+  top: 420px;
+}
+
+.detailCard.tile24 {
+  left: 600px;
+  top: 480px;
+}
+
+.detailCard.tile25 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile26 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile27 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile28 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile29 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile30 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile31 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile32 {
+  left: 600px;
+  top: 540px;
+}
+
+.detailCard.tile33 {
+  left: 540px;
+  top: 540px;
+}
+
+.detailCard.tile34 {
+  left: 480px;
+  top: 540px;
+}
+
+.detailCard.tile35 {
+  left: 420px;
+  top: 540px;
+}
+
+.detailCard.tile36 {
+  left: 360px;
+  top: 540px;
+}
+
+.detailCard.tile37 {
+  left: 300px;
+  top: 540px;
+}
+
+.detailCard.tile38 {
+  left: 240px;
+  top: 540px;
+}
+
+.detailCard.tile39 {
+  left: 180px;
+  top: 540px;
+}
+
+.detailCard.tile40 {
+  left: 120px;
+  top: 540px;
+}
+
+.detailCard.tile41 {
+  left: 60px;
+  top: 540px;
+}
+
+.detailCard.tile42 {
+  left: 0px;
+  top: 540px;
+}
+
+.detailCard.tile43 {
+  left: 0px;
+  top: 540px;
+}
+
+.detailCard.tile44 {
+  left: 0px;
+  top: 540px;
+}
+
+.detailCard.tile45 {
+  left: 0px;
+  top: 540px;
+}
+
+.detailCard.tile46 {
+  left: 0px;
+  top: 540px;
+}
+
+.detailCard.tile47 {
+  left: 0px;
+  top: 540px;
+}
+
+.detailCard.tile48 {
+  left: 0px;
+  top: 480px;
+}
+
+.detailCard.tile49 {
+  left: 0px;
+  top: 420px;
+}
+
+.detailCard.tile50 {
+  left: 0px;
+  top: 360px;
+}
+
+.detailCard.tile51 {
+  left: 0px;
+  top: 300px;
+}
+
+.detailCard.tile52 {
+  left: 0px;
+  top: 240px;
+}
+
+.detailCard.tile53 {
+  left: 0px;
+  top: 180px;
+}
+
+.detailCard.tile54 {
+  left: 0px;
+  top: 120px;
+}
+
+.detailCard.tile55 {
+  left: 0px;
+  top: 60px;
+}
+
+.detailCard.tile56 {
+  left: 0px;
+  top: 0px;
 }

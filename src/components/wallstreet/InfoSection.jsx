@@ -4,7 +4,7 @@ import Taxes from "./Taxes";
 import Chance from "./Chance";
 import Dice from "./Dice";
 
-const Info = (props) => {
+const InfoSection = (props) => {
   return (
     <div className="info">
       <div className="margin"></div>
@@ -19,4 +19,4 @@ const Info = (props) => {
   );
 };
 
-export default Info;
+export default InfoSection;

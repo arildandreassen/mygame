@@ -2,7 +2,7 @@ import BoardTile from "./BoardTile";
 import Stocks from "./Stocks";
 import DetailCard from "./DetailCard";
 
-const Middle = (props) => {
+const MiddleBoard = (props) => {
   const leftTileIds = [
     "56",
     "55",
@@ -75,4 +75,4 @@ const Middle = (props) => {
   );
 };
 
-export default Middle;
+export default MiddleBoard;

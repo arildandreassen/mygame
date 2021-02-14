@@ -1,22 +1,24 @@
+import React from "react";
+import "../../style/wallstreet/index";
 import BoardTile from "./BoardTile";
 
-const Bottom = (props) => {
+const TopBoard = (props) => {
   const tileIds = [
-    "43",
-    "42",
-    "41",
-    "40",
-    "39",
-    "38",
-    "37",
-    "36",
-    "35",
-    "34",
-    "33",
-    "32",
-    "31",
-    "30",
-    "29",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "10",
+    "11",
+    "12",
+    "13",
+    "14",
+    "15",
   ];
   const boardTiles = tileIds.map((tile) => {
     return (
@@ -29,7 +31,8 @@ const Bottom = (props) => {
       />
     );
   });
+
   return <div className="horizontal">{boardTiles}</div>;
 };
 
-export default Bottom;
+export default TopBoard;

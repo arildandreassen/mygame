@@ -1,6 +1,6 @@
-import Player from "./Player";
+import Player from "./PlayerDetail";
 
-const Players = () => {
+const PlayerSection = () => {
   return (
     <div>
       <div className="margin"></div>
@@ -12,4 +12,4 @@ const Players = () => {
   );
 };
 
-export default Players;
+export default PlayerSection;
