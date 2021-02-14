@@ -5,7 +5,22 @@ const GameTile = (props) => {
   if (parseInt(props.tileId) == props.location) {
     classes += " playerLocation";
   }
-  return <div className={classes}>{props.tileId}</div>;
+
+  return (
+    <div>
+      <div
+        className={classes}
+        onMouseEnter={() => {
+          props.onMouseEnter(props);
+        }}
+        onMouseLeave={() => {
+          props.onMouseLeave(props);
+        }}
+      >
+        {props.tileId}
+      </div>
+    </div>
+  );
 };
 
 export default GameTile;
