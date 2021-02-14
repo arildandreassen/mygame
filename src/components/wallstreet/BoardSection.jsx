@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../../style/wallstreet";
+import "../../style/wallstreet/boardsection.css";
 import TopBoard from "./TopBoard";
 import MiddleBoard from "./MiddleBoard";
 import BottomBoard from "./BottomBoard";

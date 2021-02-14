@@ -1,10 +1,12 @@
+import "../../style/wallstreet/stockgraph.css";
+
 const StockGraph = () => {
   return (
     <div className="stockgraph">
       <table>
         <tr>
           <td>750</td>
-          <td></td>
+          <td />
           <td></td>
           <td></td>
           <td></td>

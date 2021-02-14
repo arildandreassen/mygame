@@ -3,6 +3,7 @@ import Investments from "./Investments";
 import Taxes from "./Taxes";
 import Chance from "./Chance";
 import Dice from "./Dice";
+import "../../style/wallstreet/info.css";
 
 const InfoSection = (props) => {
   return (

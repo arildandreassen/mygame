@@ -1,3 +1,5 @@
+import "../../style/wallstreet/stocks.css";
+
 import StockGraph from "./StockGraph";
 
 const Stocks = () => {

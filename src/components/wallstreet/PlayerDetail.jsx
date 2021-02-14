@@ -1,3 +1,5 @@
+import "../../style/wallstreet/playerdetail.css";
+
 const PlayerDetail = () => {
   return (
     <div className="player">

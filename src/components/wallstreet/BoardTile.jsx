@@ -1,7 +1,8 @@
 import React from "react";
+import "../../style/wallstreet/boardtile.css";
 
 const BoardTile = (props) => {
-  let classes = "gametile";
+  let classes = "boardtile";
   if (parseInt(props.tileId) == props.location) {
     classes += " playerLocation";
   }

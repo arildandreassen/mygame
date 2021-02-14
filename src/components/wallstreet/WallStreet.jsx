@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import BoardSection from "./BoardSection";
 import PlayerSection from "./PlayerSection";
 import InfoSection from "./InfoSection";
+import "../../style/wallstreet/game.css";
 
 const Game = () => {
   const [location, setLocation] = useState(1);

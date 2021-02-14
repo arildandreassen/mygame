@@ -23,9 +23,3 @@
 .stocks table {
   margin: auto;
 }
-
-.stockgraph td {
-  height: 29px;
-  width: 62px;
-  background-color: chocolate;
-}

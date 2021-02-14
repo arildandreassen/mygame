@@ -1,0 +1,25 @@
+.horizontal {
+  height: 60px;
+}
+
+.middle {
+  height: 780px;
+}
+
+.vertical {
+  height: 780px;
+  width: 60px;
+  float: left;
+}
+
+.center {
+  width: 780px;
+  height: 780px;
+  background-color: lightpink;
+  float: left;
+}
+
+.centertop {
+  width: 180px;
+  height: 0px;
+}
