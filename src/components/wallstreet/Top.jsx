@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import "./style/board.css";
+import React from "react";
+import "../../style/wallstreet/index";
 import GameTile from "./GameTile";
 
 const Top = (props) => {

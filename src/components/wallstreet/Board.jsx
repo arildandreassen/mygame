@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style";
+import "../../style/wallstreet";
 import Top from "./Top";
 import Middle from "./Middle";
 import Bottom from "./Bottom";

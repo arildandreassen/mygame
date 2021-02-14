@@ -1,5 +1,3 @@
-import "./style/stockgraph.css";
-
 const StockGraph = () => {
   return (
     <div className="stockgraph">

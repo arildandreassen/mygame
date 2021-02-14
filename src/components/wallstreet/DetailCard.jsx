@@ -1,9 +1,9 @@
 import React from "react";
-import "./style/index";
+import "../../style/wallstreet/index";
 import {
   calculateHorizontalPixels,
   calculateVerticalPixels,
-} from "./util/calculatePixels";
+} from "../../util/calculatePixels";
 
 const DetailCard = (props) => {
   const horizontalPixels = calculateHorizontalPixels(props.hoveringTile);

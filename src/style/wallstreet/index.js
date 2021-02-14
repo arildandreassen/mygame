@@ -5,3 +5,4 @@ import "./player.css";
 import "./info.css";
 import "./stocks.css";
 import "./detailcard.css";
+import "./stockgraph.css";
