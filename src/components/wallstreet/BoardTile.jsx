@@ -1,6 +1,6 @@
 import React from "react";
 
-const GameTile = (props) => {
+const BoardTile = (props) => {
   let classes = "gametile";
   if (parseInt(props.tileId) == props.location) {
     classes += " playerLocation";
@@ -8,7 +8,6 @@ const GameTile = (props) => {
 
   return (
     <div
-      key={props.key}
       className={classes}
       onMouseEnter={() => {
         props.onMouseEnter(props);
@@ -22,4 +21,4 @@ const GameTile = (props) => {
   );
 };
 
-export default GameTile;
+export default BoardTile;

@@ -1,100 +1,35 @@
-import GameTile from "./GameTile";
+import BoardTile from "./BoardTile";
 
 const Bottom = (props) => {
-  return (
-    <div className="horizontal">
-      <GameTile
-        tileId="43"
+  const tileIds = [
+    "43",
+    "42",
+    "41",
+    "40",
+    "39",
+    "38",
+    "37",
+    "36",
+    "35",
+    "34",
+    "33",
+    "32",
+    "31",
+    "30",
+    "29",
+  ];
+  const boardTiles = tileIds.map((tile) => {
+    return (
+      <BoardTile
+        key={tile}
+        tileId={tile}
         location={props.location}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
       />
-      <GameTile
-        tileId="42"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="41"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="40"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="39"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="38"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="37"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="36"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="35"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="34"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="33"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="32"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="31"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="30"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-      <GameTile
-        tileId="29"
-        location={props.location}
-        onMouseEnter={props.onMouseEnter}
-        onMouseLeave={props.onMouseLeave}
-      />
-    </div>
-  );
+    );
+  });
+  return <div className="horizontal">{boardTiles}</div>;
 };
 
 export default Bottom;
