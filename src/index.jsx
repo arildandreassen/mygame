@@ -1,10 +1,10 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import Game from "./components/wallstreet/Game";
+import WallStreet from "./components/wallstreet/WallStreet";
 
 ReactDOM.render(
   <React.StrictMode>
-    <Game />
+    <WallStreet />
   </React.StrictMode>,
   document.getElementById("root")
 );

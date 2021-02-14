@@ -7,18 +7,17 @@ const GameTile = (props) => {
   }
 
   return (
-    <div>
-      <div
-        className={classes}
-        onMouseEnter={() => {
-          props.onMouseEnter(props);
-        }}
-        onMouseLeave={() => {
-          props.onMouseLeave(props);
-        }}
-      >
-        {props.tileId}
-      </div>
+    <div
+      key={props.key}
+      className={classes}
+      onMouseEnter={() => {
+        props.onMouseEnter(props);
+      }}
+      onMouseLeave={() => {
+        props.onMouseLeave(props);
+      }}
+    >
+      {props.tileId}
     </div>
   );
 };
