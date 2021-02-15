@@ -31,6 +31,8 @@ const BoardSection = (props) => {
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
+        updateCurrentPrices={props.updateCurrentPrices}
+        currentPrices={props.currentPrices}
       />
       <BottomBoard
         location={props.location}

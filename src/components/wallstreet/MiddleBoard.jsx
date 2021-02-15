@@ -66,7 +66,10 @@ const MiddleBoard = (props) => {
             <DetailCard hoveringTile={props.hoveringTile} />
           </div>
           <div>
-            <Stocks />
+            <Stocks
+              updateCurrentPrices={props.updateCurrentPrices}
+              currentPrices={props.currentPrices}
+            />
           </div>
         </div>
         <div className="vertical">{rightTiles}</div>

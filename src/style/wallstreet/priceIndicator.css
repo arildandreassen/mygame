@@ -1,0 +1,9 @@
+.priceIndicator {
+  background-color: brown;
+}
+
+.priceIndicator td {
+  height: 27px;
+  width: 62px;
+  background-color: chocolate;
+}

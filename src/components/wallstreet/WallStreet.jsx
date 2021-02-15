@@ -6,6 +6,14 @@ import "../../style/wallstreet/game.css";
 
 const Game = () => {
   const [location, setLocation] = useState(1);
+  const [currentPrices, setCurrentPrices] = useState({
+    international: 250,
+    domestic: 250,
+    emerging: 250,
+    retirement: 250,
+    mutual: 250,
+    options: 250,
+  });
 
   const rollDice = () => {
     const min = Math.ceil(1);
@@ -20,13 +28,22 @@ const Game = () => {
     setLocation(newLocation);
     console.log(location);
   };
+
+  const updateCurrentPrices = (market, price) => {
+    setCurrentPrices({ ...currentPrices, [market]: price });
+  };
+
   return (
     <div className="game">
       <div className="players">
         <PlayerSection />
       </div>
       <div>
-        <BoardSection location={location} />
+        <BoardSection
+          location={location}
+          updateCurrentPrices={updateCurrentPrices}
+          currentPrices={currentPrices}
+        />
       </div>
       <div>
         <InfoSection updateLocation={updateLocation} />

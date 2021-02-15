@@ -1,13 +1,16 @@
 import "../../style/wallstreet/stocks.css";
 
-import StockGraph from "./StockGraph";
+import PriceIndex from "./PriceIndex";
 
-const Stocks = () => {
+const Stocks = (props) => {
   return (
     <div className="stocks">
       <div className="header">Wall Street Price Index</div>
       <div className="body">
-        <StockGraph />
+        <PriceIndex
+          updateCurrentPrices={props.updateCurrentPrices}
+          currentPrices={props.currentPrices}
+        />
       </div>
       <div className="footer">
         <div className="markets">
