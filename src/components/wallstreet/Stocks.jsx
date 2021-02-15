@@ -12,15 +12,17 @@ const Stocks = () => {
       <div className="footer">
         <div className="markets">
           <table>
-            <tr>
-              <td></td>
-              <td>International Stocks</td>
-              <td>Domestic Stocks</td>
-              <td>Emerging Markets</td>
-              <td>Retirement Funds</td>
-              <td>Mutual Funds</td>
-              <td>Options</td>
-            </tr>
+            <tbody>
+              <tr>
+                <td></td>
+                <td>International Stocks</td>
+                <td>Domestic Stocks</td>
+                <td>Emerging Markets</td>
+                <td>Retirement Funds</td>
+                <td>Mutual Funds</td>
+                <td>Options</td>
+              </tr>
+            </tbody>
           </table>
         </div>
       </div>

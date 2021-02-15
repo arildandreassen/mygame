@@ -15,7 +15,6 @@ const BoardSection = (props) => {
   };
 
   const onMouseLeave = () => {
-    console.log("leaving the tile now");
     setHoveringState({ isHovering: false, tile: null });
   };
 
