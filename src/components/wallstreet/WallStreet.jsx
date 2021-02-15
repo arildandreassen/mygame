@@ -26,7 +26,6 @@ const Game = () => {
     const combined = location + roll;
     const newLocation = combined > 56 ? combined - 56 : combined;
     setLocation(newLocation);
-    console.log(location);
   };
 
   const updateCurrentPrices = (market, price) => {

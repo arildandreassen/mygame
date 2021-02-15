@@ -30,42 +30,101 @@ const PriceIndex = (props) => {
     "options",
   ];
 
+  const drop = (event) => {
+    const target = event.target;
+    event.preventDefault();
+    const cellId = event.dataTransfer.getData("cellId");
+    const cell = document.getElementById(cellId);
+    cell.style.display = "block";
+    target.appendChild(cell);
+
+    const [market, price] = target.id.split("-");
+    props.updateCurrentPrices(market, Number(price));
+  };
+
+  const dragOver = (event) => {
+    event.preventDefault();
+  };
+
   return (
     <div>
       <table className="priceIndicator">
         <tbody>
           {pricePoints.map((pricePoint) => {
+            console.log(props.currentPrices);
             return (
               <tr key={pricePoint}>
                 <td>{pricePoint}</td>
-                <td>
-                  {props.currentPrices.international === Number(pricePoint) ? (
-                    <CurrentPriceIndicator />
+                <td
+                  id={`international-${pricePoint}`}
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  {250 === Number(pricePoint) ? (
+                    <CurrentPriceIndicator
+                      market="international"
+                      pricePoint={pricePoint}
+                    />
                   ) : null}
                 </td>
-                <td>
-                  {props.currentPrices.domestic === Number(pricePoint) ? (
-                    <CurrentPriceIndicator />
+                <td
+                  id={`domestic-${pricePoint}`}
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  {250 === Number(pricePoint) ? (
+                    <CurrentPriceIndicator
+                      market="domestic"
+                      pricePoint={pricePoint}
+                    />
                   ) : null}
                 </td>
-                <td>
-                  {props.currentPrices.emerging === Number(pricePoint) ? (
-                    <CurrentPriceIndicator />
+                <td
+                  id={`emerging-${pricePoint}`}
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  {250 === Number(pricePoint) ? (
+                    <CurrentPriceIndicator
+                      market="emerging"
+                      pricePoint={pricePoint}
+                    />
                   ) : null}
                 </td>
-                <td>
-                  {props.currentPrices.retirement === Number(pricePoint) ? (
-                    <CurrentPriceIndicator />
+                <td
+                  id={`retirement-${pricePoint}`}
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  {250 === Number(pricePoint) ? (
+                    <CurrentPriceIndicator
+                      market="retirement"
+                      pricePoint={pricePoint}
+                    />
                   ) : null}
                 </td>
-                <td>
-                  {props.currentPrices.mutual === Number(pricePoint) ? (
-                    <CurrentPriceIndicator />
+                <td
+                  id={`mutual-${pricePoint}`}
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  {250 === Number(pricePoint) ? (
+                    <CurrentPriceIndicator
+                      market="mutual"
+                      pricePoint={pricePoint}
+                    />
                   ) : null}
                 </td>
-                <td>
-                  {props.currentPrices.options === Number(pricePoint) ? (
-                    <CurrentPriceIndicator />
+                <td
+                  id={`options-${pricePoint}`}
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  {250 === Number(pricePoint) ? (
+                    <CurrentPriceIndicator
+                      market="options"
+                      pricePoint={pricePoint}
+                    />
                   ) : null}
                 </td>
               </tr>
