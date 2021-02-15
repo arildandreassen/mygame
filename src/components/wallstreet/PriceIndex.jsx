@@ -36,7 +36,6 @@ const PriceIndex = (props) => {
     const cellId = event.dataTransfer.getData("cellId");
     const cell = document.getElementById(cellId);
     cell.style.display = "block";
-    target.appendChild(cell);
 
     const [market, price] = target.id.split("-");
     props.updateCurrentPrices(market, Number(price));
@@ -51,82 +50,24 @@ const PriceIndex = (props) => {
       <table className="priceIndicator">
         <tbody>
           {pricePoints.map((pricePoint) => {
-            console.log(props.currentPrices);
             return (
               <tr key={pricePoint}>
                 <td>{pricePoint}</td>
-                <td
-                  id={`international-${pricePoint}`}
-                  onDrop={drop}
-                  onDragOver={dragOver}
-                >
-                  {250 === Number(pricePoint) ? (
-                    <CurrentPriceIndicator
-                      market="international"
-                      pricePoint={pricePoint}
-                    />
-                  ) : null}
-                </td>
-                <td
-                  id={`domestic-${pricePoint}`}
-                  onDrop={drop}
-                  onDragOver={dragOver}
-                >
-                  {250 === Number(pricePoint) ? (
-                    <CurrentPriceIndicator
-                      market="domestic"
-                      pricePoint={pricePoint}
-                    />
-                  ) : null}
-                </td>
-                <td
-                  id={`emerging-${pricePoint}`}
-                  onDrop={drop}
-                  onDragOver={dragOver}
-                >
-                  {250 === Number(pricePoint) ? (
-                    <CurrentPriceIndicator
-                      market="emerging"
-                      pricePoint={pricePoint}
-                    />
-                  ) : null}
-                </td>
-                <td
-                  id={`retirement-${pricePoint}`}
-                  onDrop={drop}
-                  onDragOver={dragOver}
-                >
-                  {250 === Number(pricePoint) ? (
-                    <CurrentPriceIndicator
-                      market="retirement"
-                      pricePoint={pricePoint}
-                    />
-                  ) : null}
-                </td>
-                <td
-                  id={`mutual-${pricePoint}`}
-                  onDrop={drop}
-                  onDragOver={dragOver}
-                >
-                  {250 === Number(pricePoint) ? (
-                    <CurrentPriceIndicator
-                      market="mutual"
-                      pricePoint={pricePoint}
-                    />
-                  ) : null}
-                </td>
-                <td
-                  id={`options-${pricePoint}`}
-                  onDrop={drop}
-                  onDragOver={dragOver}
-                >
-                  {250 === Number(pricePoint) ? (
-                    <CurrentPriceIndicator
-                      market="options"
-                      pricePoint={pricePoint}
-                    />
-                  ) : null}
-                </td>
+                {markets.map((market) => {
+                  const shouldRender =
+                    props.currentPrices[market] === Number(pricePoint);
+                  return (
+                    <td
+                      id={`${market}-${pricePoint}`}
+                      onDrop={drop}
+                      onDragOver={dragOver}
+                    >
+                      {shouldRender ? (
+                        <CurrentPriceIndicator market={market} />
+                      ) : null}
+                    </td>
+                  );
+                })}
               </tr>
             );
           })}
