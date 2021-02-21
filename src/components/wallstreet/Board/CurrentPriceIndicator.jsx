@@ -5,9 +5,9 @@ const CurrentPriceIndicator = (props) => {
   const dragStart = (event) => {
     const target = event.target;
     event.dataTransfer.setData("cellId", target.id);
-    // setTimeout(() => {
-    //   target.style.display = "none";
-    // }, 0);
+    setTimeout(() => {
+      target.style.display = "none";
+    }, 0);
   };
 
   const dragOver = (event) => {

@@ -3,110 +3,48 @@ import "../../../style/wallstreet/investments.css";
 import PlayerIndicator from "./PlayerIndicator";
 
 const Investments = (props) => {
+  const players = ["one", "two", "three", "four"];
+  const markets = [
+    "International",
+    "Domestic",
+    "Emerging",
+    "Retirement",
+    "Mutual",
+    "Options",
+  ];
   return (
     <div className="investments infoCard">
-      <table className="investment">
-        <thead>
-          <tr>
-            <th>International</th>
-            <th>Domestic</th>
-            <th>Emerging</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div>1</div>
-              <div>1</div>
-              <div>1</div>
-              <div>1</div>
-            </td>
-            <td>
-              <div>2</div>
-              <div>2</div>
-              <div>2</div>
-              <div>2</div>
-            </td>
-            <td>
-              <div>3</div>
-              <div>3</div>
-              <div>3</div>
-              <div>3</div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <table className="investment">
-        <thead>
-          <tr>
-            <th>Retirement</th>
-            <th>Mutual</th>
-            <th>Options</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <div>1</div>
-              <div>1</div>
-              <div>1</div>
-              <div>1</div>
-            </td>
-            <td>
-              <div>2</div>
-              <div>2</div>
-              <div>2</div>
-              <div>2</div>
-            </td>
-            <td>
-              <div>3</div>
-              <div>3</div>
-              <div>3</div>
-              <div>3</div>
-            </td>
-          </tr>
-        </tbody>
-      </table>
-      <div className="playerTiles">
-        <div>Players</div>
-        <table className="investment">
-          <tbody>
-            <tr>
-              <td>
+      <div className="investmentMarkets">
+        {markets.map((market) => {
+          return (
+            <div className="investmentMarket">
+              <div className="investmentHeader">{market}</div>
+              <div className="investmentTiles">
+                <div>1</div>
+                <div>2</div>
+                <div>3</div>
+                <div>4</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+      <div className="playerInvestments">
+        {players.map((player) => {
+          return (
+            <div className="playerInvestment">
+              <div>{player}</div>
+              <div className="playerTiles">
                 <div>
                   <PlayerIndicator />
                 </div>
-                <div>
-                  <PlayerIndicator />
-                </div>
-                <div>
-                  <PlayerIndicator />
-                </div>
-                <div>
-                  <PlayerIndicator />
-                </div>
-              </td>
-              <td>
                 <div>2</div>
-                <div>2</div>
-                <div>2</div>
-                <div>2</div>
-              </td>
-              <td>
                 <div>3</div>
-                <div>3</div>
-                <div>3</div>
-                <div>3</div>
-              </td>
-              <td>
                 <div>4</div>
-                <div>4</div>
-                <div>4</div>
-                <div>4</div>
-              </td>
-            </tr>
-          </tbody>
-        </table>
+              </div>
+            </div>
+          );
+        })}
       </div>
     </div>
   );
