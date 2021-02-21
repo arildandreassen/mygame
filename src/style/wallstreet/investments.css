@@ -15,12 +15,17 @@
   background-color: coral;
 }
 
-.investmentTiles > div {
+.investmentTile {
   float: left;
   width: 43px;
   height: 30px;
   margin: 5px;
   background-color: blanchedalmond;
+}
+
+.investmentTileBack {
+  width: 43px;
+  height: 30px;
 }
 
 .playerInvestments {

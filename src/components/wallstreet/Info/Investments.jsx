@@ -1,9 +1,10 @@
 import React from "react";
 import "../../../style/wallstreet/investments.css";
+import "../../../style/wallstreet/playerindicator.css";
 import PlayerIndicator from "./PlayerIndicator";
 
 const Investments = (props) => {
-  const players = ["one", "two", "three", "four"];
+  const players = ["arild", "frode", "vidar", "sigmund"];
   const markets = [
     "International",
     "Domestic",
@@ -12,18 +13,57 @@ const Investments = (props) => {
     "Mutual",
     "Options",
   ];
+
+  const drop = (event) => {
+    event.preventDefault();
+    const target = event.target;
+    const targetCell = document.getElementById(target.parentNode.id);
+    targetCell.querySelector("div").classList.add("playerindicator");
+  };
+
+  const dragOver = (event) => {
+    event.preventDefault();
+  };
   return (
     <div className="investments infoCard">
       <div className="investmentMarkets">
         {markets.map((market) => {
           return (
-            <div className="investmentMarket">
+            <div key={market} className="investmentMarket">
               <div className="investmentHeader">{market}</div>
               <div className="investmentTiles">
-                <div>1</div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+                <div
+                  id={`${market}-1`}
+                  className="investmentTile"
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  <div className="investmentTileBack"></div>
+                </div>
+                <div
+                  id={`${market}-2`}
+                  className="investmentTile"
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  <div className="investmentTileBack"></div>
+                </div>
+                <div
+                  id={`${market}-3`}
+                  className="investmentTile"
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  <div className="investmentTileBack"></div>
+                </div>
+                <div
+                  id={`${market}-4`}
+                  className="investmentTile"
+                  onDrop={drop}
+                  onDragOver={dragOver}
+                >
+                  <div className="investmentTileBack"></div>
+                </div>
               </div>
             </div>
           );
@@ -32,15 +72,21 @@ const Investments = (props) => {
       <div className="playerInvestments">
         {players.map((player) => {
           return (
-            <div className="playerInvestment">
+            <div key={player} className="playerInvestment">
               <div>{player}</div>
               <div className="playerTiles">
                 <div>
-                  <PlayerIndicator />
+                  <PlayerIndicator player={player} number={1} />
                 </div>
-                <div>2</div>
-                <div>3</div>
-                <div>4</div>
+                <div>
+                  <PlayerIndicator player={player} number={2} />
+                </div>
+                <div>
+                  <PlayerIndicator player={player} number={3} />
+                </div>
+                <div>
+                  <PlayerIndicator player={player} number={4} />
+                </div>
               </div>
             </div>
           );

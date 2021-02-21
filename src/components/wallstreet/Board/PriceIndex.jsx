@@ -34,8 +34,8 @@ const PriceIndex = (props) => {
     const target = event.target;
     event.preventDefault();
     const cellId = event.dataTransfer.getData("cellId");
-    const cell = document.getElementById(cellId);
-    cell.style.display = "block";
+    const targetCell = document.getElementById(cellId);
+    targetCell.style.display = "block";
 
     const [market, price] = target.id.split("-");
     props.updateCurrentPrices(market, Number(price));
