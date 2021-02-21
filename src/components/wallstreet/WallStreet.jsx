@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import BoardSection from "./BoardSection";
-import PlayerSection from "./PlayerSection";
-import InfoSection from "./InfoSection";
+import BoardSection from "./Board/BoardSection";
+import PlayerSection from "./Players/PlayerSection";
+import InfoSection from "./Info/InfoSection";
 import "../../style/wallstreet/game.css";
 
 const Game = () => {

@@ -1,4 +1,4 @@
-import "../../style/wallstreet/playerdetail.css";
+import "../../../style/wallstreet/playerdetail.css";
 
 const PlayerDetail = () => {
   return (

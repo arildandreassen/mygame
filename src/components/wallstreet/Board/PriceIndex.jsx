@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/wallstreet/priceIndicator.css";
+import "../../../style/wallstreet/priceIndicator.css";
 import CurrentPriceIndicator from "./CurrentPriceIndicator";
 
 const PriceIndex = (props) => {
@@ -58,6 +58,7 @@ const PriceIndex = (props) => {
                     props.currentPrices[market] === Number(pricePoint);
                   return (
                     <td
+                      key={`${market}-${pricePoint}`}
                       id={`${market}-${pricePoint}`}
                       onDrop={drop}
                       onDragOver={dragOver}

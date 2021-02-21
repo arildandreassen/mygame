@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/wallstreet/boardtile.css";
+import "../../../style/wallstreet/boardtile.css";
 
 const BoardTile = (props) => {
   let classes = "boardtile";

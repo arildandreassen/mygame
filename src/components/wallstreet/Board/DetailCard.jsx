@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/wallstreet/detailcard.css";
+import "../../../style/wallstreet/detailcard.css";
 
 const DetailCard = (props) => {
   let classes = `detailCard`;

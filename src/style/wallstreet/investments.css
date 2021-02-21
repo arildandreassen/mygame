@@ -1,0 +1,24 @@
+.investment {
+  margin: 0 auto;
+}
+
+.investment td {
+  width: 94px;
+  height: 30px;
+  background-color: coral;
+}
+
+.investment div {
+  float: left;
+  width: 43px;
+  height: 30px;
+  margin: 2px;
+  background-color: blanchedalmond;
+}
+
+.playerTiles {
+  margin-top: 30px;
+}
+.playerTiles > div {
+  margin-left: 6px;
+}

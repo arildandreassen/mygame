@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/wallstreet/currentpriceindicator.css";
+import "../../../style/wallstreet/currentpriceindicator.css";
 
 const CurrentPriceIndicator = (props) => {
   const dragStart = (event) => {

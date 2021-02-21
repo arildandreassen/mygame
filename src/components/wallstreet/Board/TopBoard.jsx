@@ -1,5 +1,5 @@
 import React from "react";
-import "../../style/wallstreet/index";
+import "../../../style/wallstreet/index";
 import BoardTile from "./BoardTile";
 
 const TopBoard = (props) => {

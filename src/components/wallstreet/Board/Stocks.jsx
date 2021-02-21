@@ -1,4 +1,4 @@
-import "../../style/wallstreet/stocks.css";
+import "../../../style/wallstreet/stocks.css";
 
 import PriceIndex from "./PriceIndex";
 
