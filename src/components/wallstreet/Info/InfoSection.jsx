@@ -11,7 +11,10 @@ const InfoSection = (props) => {
       <div className="margin"></div>
       <div className="body">
         <Chance />
-        <Investments />
+        <Investments
+          updateCurrentPrices={props.updateCurrentPrices}
+          currentPrices={props.currentPrices}
+        />
         <Taxes />
         <Dice updateLocation={props.updateLocation} />
       </div>

@@ -45,7 +45,11 @@ const Game = () => {
         />
       </div>
       <div>
-        <InfoSection updateLocation={updateLocation} />
+        <InfoSection
+          updateLocation={updateLocation}
+          updateCurrentPrices={updateCurrentPrices}
+          currentPrices={currentPrices}
+        />
       </div>
     </div>
   );
