@@ -3,10 +3,12 @@ import "../../../style/wallstreet/playerindicator.css";
 
 const PlayerIndicator = (props) => {
   const dragStart = (event) => {
-    const source = event.target;
-    event.dataTransfer.setData("sourceId", source.id);
+    const target = event.target;
+    event.dataTransfer.setData("sourceId", target.id);
+    event.dataTransfer.setData("parentId", target.parentElement.id);
+
     setTimeout(() => {
-      source.style.display = "none";
+      target.style.display = "none";
     }, 0);
   };
 
@@ -16,7 +18,7 @@ const PlayerIndicator = (props) => {
 
   return (
     <div
-      id={`${props.player}-investment-${props.number}`}
+      id={`${props.id}`}
       className="playerindicator"
       draggable={true}
       onDragStart={dragStart}

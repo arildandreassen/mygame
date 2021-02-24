@@ -29,7 +29,8 @@ const Game = () => {
   };
 
   const updateCurrentPrices = (market, price) => {
-    setCurrentPrices({ ...currentPrices, [market]: price });
+    const currently = currentPrices[market];
+    setCurrentPrices({ ...currentPrices, [market]: currently + price });
   };
 
   return (
