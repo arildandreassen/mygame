@@ -1,9 +1,11 @@
 import "../../../style/wallstreet/playerdetail.css";
 
-const PlayerDetail = () => {
+const PlayerDetail = (props) => {
+  const player = props.player;
   return (
     <div className="player">
-      <h3>Player name</h3>
+      <h3>{player.name}</h3>
+      <h5>{player.funds}</h5>
     </div>
   );
 };

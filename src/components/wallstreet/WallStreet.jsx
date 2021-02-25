@@ -5,7 +5,17 @@ import InfoSection from "./Info/InfoSection";
 import "../../style/wallstreet/game.css";
 
 const Game = () => {
+  const [players, updatePlayer] = useState([]);
   const [location, setLocation] = useState(1);
+
+  // const p = [{ name: "Arild" }];
+  const addPlayer = () => {
+    const id = Math.floor(Math.random() * 1000);
+    const name = prompt("what is your name?");
+
+    updatePlayer([...players, { name, funds: 1000 }]);
+  };
+
   const [currentPrices, setCurrentPrices] = useState({
     international: 250,
     domestic: 250,
@@ -36,7 +46,7 @@ const Game = () => {
   return (
     <div className="game">
       <div className="players">
-        <PlayerSection />
+        <PlayerSection players={players} addPlayer={addPlayer} />
       </div>
       <div>
         <BoardSection
