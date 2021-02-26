@@ -14,6 +14,7 @@ const InfoSection = (props) => {
         <Investments
           updateCurrentPrices={props.updateCurrentPrices}
           currentPrices={props.currentPrices}
+          players={props.players}
         />
         <Taxes />
         <Dice updateLocation={props.updateLocation} />

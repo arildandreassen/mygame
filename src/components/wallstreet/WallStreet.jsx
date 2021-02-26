@@ -5,7 +5,11 @@ import InfoSection from "./Info/InfoSection";
 import "../../style/wallstreet/game.css";
 
 const Game = () => {
-  const [players, updatePlayer] = useState([]);
+  // const [players, updatePlayer] = useState([]);
+  const [players, updatePlayer] = useState([
+    { name: "Arild", funds: 1000 },
+    { name: "frode", funds: 1000 },
+  ]);
   const [location, setLocation] = useState(1);
 
   // const p = [{ name: "Arild" }];
@@ -60,6 +64,7 @@ const Game = () => {
           updateLocation={updateLocation}
           updateCurrentPrices={updateCurrentPrices}
           currentPrices={currentPrices}
+          players={players}
         />
       </div>
     </div>

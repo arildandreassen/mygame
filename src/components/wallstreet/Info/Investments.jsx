@@ -4,7 +4,8 @@ import "../../../style/wallstreet/playerindicator.css";
 import PlayerIndicator from "./PlayerIndicator";
 
 const Investments = (props) => {
-  const players = ["arild", "frode", "vidar", "sigmund"];
+  const players = props.players;
+  console.log(props);
   const markets = [
     "international",
     "domestic",
@@ -83,8 +84,8 @@ const Investments = (props) => {
       <div className="playerInvestments">
         {players.map((player) => {
           return (
-            <div key={player} className="playerInvestment">
-              <div>{player}</div>
+            <div key={player.name} className="playerInvestment">
+              <div>{player.name}</div>
               <div className="playerTiles">
                 <div
                   className="playerTile"
@@ -92,7 +93,7 @@ const Investments = (props) => {
                   onDragOver={dragOver}
                 >
                   <PlayerIndicator
-                    id={`${player}-1`}
+                    id={`${player.name}-1`}
                     updateCurrentPrices={props.updateCurrentPrices}
                     currentPrices={props.currentPrices}
                   />
@@ -103,7 +104,7 @@ const Investments = (props) => {
                   onDragOver={dragOver}
                 >
                   <PlayerIndicator
-                    id={`${player}-2`}
+                    id={`${player.name}-2`}
                     updateCurrentPrices={props.updateCurrentPrices}
                     currentPrices={props.currentPrices}
                   />
@@ -114,7 +115,7 @@ const Investments = (props) => {
                   onDragOver={dragOver}
                 >
                   <PlayerIndicator
-                    id={`${player}-3`}
+                    id={`${player.name}-3`}
                     updateCurrentPrices={props.updateCurrentPrices}
                     currentPrices={props.currentPrices}
                   />
@@ -125,7 +126,7 @@ const Investments = (props) => {
                   onDragOver={dragOver}
                 >
                   <PlayerIndicator
-                    id={`${player}-4`}
+                    id={`${player.name}-4`}
                     updateCurrentPrices={props.updateCurrentPrices}
                     currentPrices={props.currentPrices}
                   />
