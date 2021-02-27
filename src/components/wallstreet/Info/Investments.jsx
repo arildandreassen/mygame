@@ -19,8 +19,13 @@ const Investments = (props) => {
     const target = event.target;
     const sourceId = event.dataTransfer.getData("sourceId");
     const parentId = event.dataTransfer.getData("parentId");
-
     const indicator = document.getElementById(sourceId);
+    const players = props.players;
+    const whosTurn = props.whosTurn;
+    const prices = props.currentPrices;
+    const newPlayers = [...players];
+    const currentFunds = newPlayers[whosTurn].funds;
+
     indicator.style.display = "block";
     target.appendChild(indicator);
 
@@ -28,9 +33,13 @@ const Investments = (props) => {
     const [sourceMarket, sourceMarker] = parentId.split("-");
 
     if (targetMarket && !sourceMarket) {
+      newPlayers[whosTurn].funds = currentFunds - prices[targetMarket];
+      props.updatePlayer(newPlayers);
       props.updateCurrentPrices(targetMarket, +50);
     }
     if (sourceMarket && !targetMarket) {
+      newPlayers[whosTurn].funds = currentFunds + prices[sourceMarket];
+      props.updatePlayer(newPlayers);
       props.updateCurrentPrices(sourceMarket, -50);
     }
   };

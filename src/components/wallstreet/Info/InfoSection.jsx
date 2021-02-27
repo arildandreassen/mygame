@@ -10,11 +10,13 @@ const InfoSection = (props) => {
     <div className="info">
       <div className="margin"></div>
       <div className="body">
-        <Chance />
+        <Chance players={props.players} whosTurn={props.whosTurn} />
         <Investments
+          updatePlayer={props.updatePlayer}
           updateCurrentPrices={props.updateCurrentPrices}
           currentPrices={props.currentPrices}
           players={props.players}
+          whosTurn={props.whosTurn}
         />
         <Taxes />
         <Dice

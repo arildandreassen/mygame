@@ -66,6 +66,7 @@ const Game = () => {
       </div>
       <div>
         <InfoSection
+          updatePlayer={updatePlayer}
           updatePlayerLocation={updatePlayerLocation}
           updateCurrentPrices={updateCurrentPrices}
           currentPrices={currentPrices}
