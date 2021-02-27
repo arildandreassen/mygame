@@ -5,7 +5,6 @@ import PlayerIndicator from "./PlayerIndicator";
 
 const Investments = (props) => {
   const players = props.players;
-  console.log(props);
   const markets = [
     "international",
     "domestic",
@@ -29,13 +28,9 @@ const Investments = (props) => {
     const [sourceMarket, sourceMarker] = parentId.split("-");
 
     if (targetMarket && !sourceMarket) {
-      console.log("first");
-
       props.updateCurrentPrices(targetMarket, +50);
     }
     if (sourceMarket && !targetMarket) {
-      console.log("third");
-
       props.updateCurrentPrices(sourceMarket, -50);
     }
   };

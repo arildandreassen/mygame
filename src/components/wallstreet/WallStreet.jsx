@@ -7,17 +7,20 @@ import "../../style/wallstreet/game.css";
 const Game = () => {
   // const [players, updatePlayer] = useState([]);
   const [players, updatePlayer] = useState([
-    { name: "Arild", funds: 1000 },
-    { name: "frode", funds: 1000 },
+    { id: 128376, name: "Arild", funds: 1000, location: 1, color: "blue" },
+    { id: 8234234, name: "Frode", funds: 1000, location: 1, color: "red" },
   ]);
-  const [location, setLocation] = useState(1);
 
-  // const p = [{ name: "Arild" }];
+  const [whosTurn, updateWhosTurn] = useState(0);
+
   const addPlayer = () => {
-    const id = Math.floor(Math.random() * 1000);
+    const id = Math.floor(Math.random() * 100000);
     const name = prompt("what is your name?");
 
-    updatePlayer([...players, { name, funds: 1000 }]);
+    updatePlayer([
+      ...players,
+      { id, name, funds: 1000, location: 1, color: "green" },
+    ]);
   };
 
   const [currentPrices, setCurrentPrices] = useState({
@@ -29,17 +32,18 @@ const Game = () => {
     options: 250,
   });
 
-  const rollDice = () => {
-    const min = Math.ceil(1);
-    const max = Math.floor(7);
-    return Math.floor(Math.random() * (max - min) + min);
-  };
-
-  const updateLocation = () => {
-    const roll = rollDice();
-    const combined = location + roll;
+  const updatePlayerLocation = (roll) => {
+    const playerCount = players.length;
+    const newPlayers = [...players];
+    const currentPlayerLocation = newPlayers[whosTurn].location;
+    const combined = currentPlayerLocation + roll;
     const newLocation = combined > 56 ? combined - 56 : combined;
-    setLocation(newLocation);
+
+    newPlayers[whosTurn].location = newLocation;
+    updatePlayer(newPlayers);
+
+    const newWhosTurn = whosTurn !== playerCount - 1 ? whosTurn + 1 : 0;
+    updateWhosTurn(newWhosTurn);
   };
 
   const updateCurrentPrices = (market, price) => {
@@ -54,17 +58,19 @@ const Game = () => {
       </div>
       <div>
         <BoardSection
-          location={location}
           updateCurrentPrices={updateCurrentPrices}
           currentPrices={currentPrices}
+          players={players}
+          whosTurn={whosTurn}
         />
       </div>
       <div>
         <InfoSection
-          updateLocation={updateLocation}
+          updatePlayerLocation={updatePlayerLocation}
           updateCurrentPrices={updateCurrentPrices}
           currentPrices={currentPrices}
           players={players}
+          whosTurn={whosTurn}
         />
       </div>
     </div>

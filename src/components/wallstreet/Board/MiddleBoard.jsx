@@ -39,7 +39,8 @@ const MiddleBoard = (props) => {
       <BoardTile
         key={tile}
         tileId={tile}
-        location={props.location}
+        players={props.players}
+        whosTurn={props.whosTurn}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
       />
@@ -51,7 +52,8 @@ const MiddleBoard = (props) => {
       <BoardTile
         key={tile}
         tileId={tile}
-        location={props.location}
+        players={props.players}
+        whosTurn={props.whosTurn}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
       />

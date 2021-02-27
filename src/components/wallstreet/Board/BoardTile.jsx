@@ -3,9 +3,12 @@ import "../../../style/wallstreet/boardtile.css";
 
 const BoardTile = (props) => {
   let classes = "boardtile";
-  if (parseInt(props.tileId) == props.location) {
-    classes += " playerLocation";
-  }
+  const players = props.players;
+  players.forEach((player) => {
+    if (parseInt(props.tileId) == player.location) {
+      classes += " playerLocation";
+    }
+  });
 
   return (
     <div

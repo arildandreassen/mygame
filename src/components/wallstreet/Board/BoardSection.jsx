@@ -21,13 +21,15 @@ const BoardSection = (props) => {
   return (
     <div className="board">
       <TopBoard
-        location={props.location}
+        players={props.players}
+        whosTurn={props.whosTurn}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
       />
       <MiddleBoard
-        location={props.location}
+        players={props.players}
+        whosTurn={props.whosTurn}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
@@ -35,7 +37,8 @@ const BoardSection = (props) => {
         currentPrices={props.currentPrices}
       />
       <BottomBoard
-        location={props.location}
+        players={props.players}
+        whosTurn={props.whosTurn}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}

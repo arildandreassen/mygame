@@ -17,7 +17,11 @@ const InfoSection = (props) => {
           players={props.players}
         />
         <Taxes />
-        <Dice updateLocation={props.updateLocation} />
+        <Dice
+          updatePlayerLocation={props.updatePlayerLocation}
+          players={props.players}
+          whosTurn={props.whosTurn}
+        />
       </div>
       <div className="margin"></div>
     </div>
