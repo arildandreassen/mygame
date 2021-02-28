@@ -3,7 +3,6 @@ import "../../../style/wallstreet/boardtile.css";
 import tiles from "../tiles.json";
 
 const BoardTile = (props) => {
-  let style;
   let tileText;
   let classes = "boardtile";
   let whoIsOnTile = [];
@@ -14,14 +13,17 @@ const BoardTile = (props) => {
 
   players.forEach((player) => {
     if (parseInt(props.tileId) == player.location) {
-      whoIsOnTile.push({ name: player.name, color: player.color });
+      whoIsOnTile.push({
+        player: player.player,
+        name: player.name,
+        color: player.color,
+      });
     }
   });
 
   return (
     <div
       className={classes}
-      style={style}
       onMouseEnter={() => {
         props.onMouseEnter(props);
       }}
@@ -31,7 +33,11 @@ const BoardTile = (props) => {
     >
       <div className={"playerLocations"}>
         {whoIsOnTile.map((who) => {
-          return <div className={`playercount${whoIsOnTile.length}`}></div>;
+          return (
+            <div
+              className={`playercount${whoIsOnTile.length} ${who.player}`}
+            ></div>
+          );
         })}
       </div>
       <div className="tileText">{tile.shortText}</div>

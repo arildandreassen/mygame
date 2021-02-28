@@ -7,8 +7,20 @@ import "../../style/wallstreet/game.css";
 const Game = () => {
   // const [players, updatePlayer] = useState([]);
   const [players, updatePlayer] = useState([
-    { id: 128376, name: "Arild", funds: 1000, location: 1, color: "blue" },
-    { id: 8234234, name: "Frode", funds: 1000, location: 1, color: "red" },
+    {
+      player: "player1",
+      name: "Arild",
+      funds: 1000,
+      location: 1,
+      color: "blue",
+    },
+    {
+      player: "player2",
+      name: "Frode",
+      funds: 1000,
+      location: 1,
+      color: "red",
+    },
   ]);
 
   const [whosTurn, updateWhosTurn] = useState(0);
@@ -16,10 +28,10 @@ const Game = () => {
   const addPlayer = () => {
     const id = Math.floor(Math.random() * 100000);
     const name = prompt("what is your name?");
-
+    const player = `player${players.length + 1}`;
     updatePlayer([
       ...players,
-      { id, name, funds: 1000, location: 1, color: "green" },
+      { player, name, funds: 1000, location: 1, color: "green" },
     ]);
   };
 

@@ -27,27 +27,40 @@
 .playercount1 {
   width: 60px;
   height: 60px;
-  background-color: lightblue;
+
   float: left;
 }
 
 .playercount2 {
   width: 30px;
   height: 60px;
-  background-color: lightcoral;
   float: left;
 }
 
 .playercount3 {
   width: 20px;
   height: 60px;
-  background-color: lightgrey;
   float: left;
 }
 
 .playercount4 {
   width: 30px;
   height: 30px;
-  background-color: lightseagreen;
   float: left;
+}
+
+.player1 {
+  background-color: lightblue;
+}
+
+.player2 {
+  background-color: lightcoral;
+}
+
+.player3 {
+  background-color: lightgrey;
+}
+
+.player4 {
+  background-color: lightseagreen;
 }
