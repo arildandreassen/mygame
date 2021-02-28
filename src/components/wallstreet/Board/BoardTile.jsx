@@ -1,11 +1,16 @@
 import React from "react";
 import "../../../style/wallstreet/boardtile.css";
+import tiles from "../tiles.json";
 
 const BoardTile = (props) => {
-  let tileText = props.tileId;
   let style;
+  let tileText;
   let classes = "boardtile";
   const players = props.players;
+
+  const tile = tiles.find((tile) => tile.location == props.tileId);
+  tileText = tile.shortText;
+
   players.forEach((player) => {
     if (parseInt(props.tileId) == player.location) {
       style = {

@@ -1,6 +1,7 @@
 import BoardTile from "./BoardTile";
 import Stocks from "./Stocks";
 import DetailCard from "./DetailCard";
+import tiles from "../tiles.json";
 
 const MiddleBoard = (props) => {
   const leftTileIds = [
