@@ -29,12 +29,12 @@ const BoardTile = (props) => {
         props.onMouseLeave(props);
       }}
     >
-      <div>{tileText}</div>
-      <div className={"playerLocation"}>
+      <div className={"playerLocations"}>
         {whoIsOnTile.map((who) => {
-          return <div style={{ backgroundColor: who.color }}></div>;
+          return <div className={`playercount${whoIsOnTile.length}`}></div>;
         })}
       </div>
+      <div className="tileText">{tile.shortText}</div>
     </div>
   );
 };

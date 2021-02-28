@@ -6,7 +6,8 @@
   box-shadow: 0px 0px 0px 1px black inset;
   text-align: center;
   position: relative;
-  /* line-height: 60px; */
+  line-height: 60px;
+  display: grid;
 }
 
 .boardtile:hover {
@@ -14,15 +15,39 @@
   float: left;
 }
 
-.playerLocation {
-  width: 60px;
-  height: 15px;
-  position: absolute;
-  bottom: 0px;
+.boardtile div,
+.playerlocations {
+  grid-area: 1 / 1;
 }
 
-.playerLocation div {
-  width: 15px;
-  height: 15px;
+.tileText {
+  box-shadow: 0px 0px 0px 1px black inset;
+}
+
+.playercount1 {
+  width: 60px;
+  height: 60px;
+  background-color: lightblue;
+  float: left;
+}
+
+.playercount2 {
+  width: 30px;
+  height: 60px;
+  background-color: lightcoral;
+  float: left;
+}
+
+.playercount3 {
+  width: 20px;
+  height: 60px;
+  background-color: lightgrey;
+  float: left;
+}
+
+.playercount4 {
+  width: 30px;
+  height: 30px;
+  background-color: lightseagreen;
   float: left;
 }
