@@ -12,7 +12,7 @@ const Game = () => {
       name: "Arild",
       funds: 1000,
       location: 1,
-      color: "blue",
+      color: "yellow",
     },
     {
       player: "player2",

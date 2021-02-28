@@ -4,6 +4,7 @@ import tiles from "../tiles.json";
 
 const BoardTile = (props) => {
   let tileText;
+  let style;
   let classes = "boardtile";
   let whoIsOnTile = [];
   const players = props.players;
@@ -36,6 +37,7 @@ const BoardTile = (props) => {
           return (
             <div
               className={`playercount${whoIsOnTile.length} ${who.player}`}
+              style={{ backgroundColor: who.color }}
             ></div>
           );
         })}
