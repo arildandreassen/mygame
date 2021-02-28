@@ -6,6 +6,7 @@ const BoardTile = (props) => {
   let style;
   let tileText;
   let classes = "boardtile";
+  let whoIsOnTile = [];
   const players = props.players;
 
   const tile = tiles.find((tile) => tile.location == props.tileId);
@@ -13,10 +14,7 @@ const BoardTile = (props) => {
 
   players.forEach((player) => {
     if (parseInt(props.tileId) == player.location) {
-      style = {
-        backgroundColor: player.color,
-      };
-      tileText = player.name;
+      whoIsOnTile.push({ name: player.name, color: player.color });
     }
   });
 
@@ -31,7 +29,12 @@ const BoardTile = (props) => {
         props.onMouseLeave(props);
       }}
     >
-      {tileText}
+      <div>{tileText}</div>
+      <div className={"playerLocation"}>
+        {whoIsOnTile.map((who) => {
+          return <div style={{ backgroundColor: who.color }}></div>;
+        })}
+      </div>
     </div>
   );
 };
