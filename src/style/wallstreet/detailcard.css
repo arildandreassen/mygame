@@ -2,8 +2,20 @@
   height: 240px;
   width: 180px;
   position: relative;
-  background-color: blueviolet;
+  background-color: white;
+  box-shadow: 0px 0px 0px 1px black inset;
   opacity: 0%;
+}
+
+.detailHeader {
+  height: 15%;
+  width: 80%;
+  margin-left: 10%;
+  background-color: lightseagreen;
+  text-align: center;
+}
+
+.detailBody {
 }
 
 .detailCard.tile {

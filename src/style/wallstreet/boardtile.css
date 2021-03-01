@@ -6,7 +6,6 @@
   box-shadow: 0px 0px 0px 1px black inset;
   text-align: center;
   position: relative;
-  line-height: 60px;
   display: grid;
 }
 
@@ -15,13 +14,19 @@
   float: left;
 }
 
-.boardtile div,
+.boardtile > div,
 .playerlocations {
   grid-area: 1 / 1;
 }
 
-.tileText {
+.tileIcon {
+  width: 20px;
+  height: 20px;
+}
+
+.tileInfo {
   box-shadow: 0px 0px 0px 1px black inset;
+  font-size: 13px;
 }
 
 .playercount1 {

@@ -25,6 +25,15 @@ const Game = () => {
 
   const [whosTurn, updateWhosTurn] = useState(0);
 
+  const [currentPrices, setCurrentPrices] = useState({
+    international: 250,
+    domestic: 250,
+    emerging: 250,
+    retirement: 250,
+    mutual: 250,
+    options: 250,
+  });
+
   const addPlayer = () => {
     const id = Math.floor(Math.random() * 100000);
     const name = prompt("what is your name?");
@@ -34,15 +43,6 @@ const Game = () => {
       { player, name, funds: 1000, location: 1, color: "green" },
     ]);
   };
-
-  const [currentPrices, setCurrentPrices] = useState({
-    international: 250,
-    domestic: 250,
-    emerging: 250,
-    retirement: 250,
-    mutual: 250,
-    options: 250,
-  });
 
   const updatePlayerLocation = (roll) => {
     const playerCount = players.length;

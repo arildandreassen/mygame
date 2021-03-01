@@ -4,7 +4,6 @@ import tiles from "../tiles.json";
 
 const BoardTile = (props) => {
   let tileText;
-  let style;
   let classes = "boardtile";
   let whoIsOnTile = [];
   const players = props.players;
@@ -42,7 +41,13 @@ const BoardTile = (props) => {
           );
         })}
       </div>
-      <div className="tileText">{tile.shortText}</div>
+      <div className="tileInfo">
+        <div>{tile.title}</div>
+        <div>
+          {tile.icon ? <img className="tileIcon" src={tile.icon} /> : null}
+        </div>
+        <div>{tile.shortText}</div>
+      </div>
     </div>
   );
 };

@@ -16,8 +16,8 @@ const DetailCard = (props) => {
   }
 
   return (
-    <div>
-      <div className={classes}>{tile.detailText}</div>
+    <div className={classes}>
+      <div className="detailHeader">{tile.detailHeader}</div>
     </div>
   );
 };
