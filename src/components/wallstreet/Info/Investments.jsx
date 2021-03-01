@@ -34,13 +34,15 @@ const Investments = (props) => {
 
     if (targetMarket && !sourceMarket) {
       newPlayers[whosTurn].funds = currentFunds - prices[targetMarket];
+      const currentPrice = props.currentPrices[targetMarket];
       props.updatePlayer(newPlayers);
-      props.updateCurrentPrices(targetMarket, +50);
+      props.updateCurrentPrices(targetMarket, currentPrice + 50);
     }
     if (sourceMarket && !targetMarket) {
       newPlayers[whosTurn].funds = currentFunds + prices[sourceMarket];
+      const currentPrice = props.currentPrices[sourceMarket];
       props.updatePlayer(newPlayers);
-      props.updateCurrentPrices(sourceMarket, -50);
+      props.updateCurrentPrices(sourceMarket, currentPrice - 50);
     }
   };
 

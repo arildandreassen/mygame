@@ -60,7 +60,7 @@ const Game = () => {
 
   const updateCurrentPrices = (market, price) => {
     const currently = currentPrices[market];
-    setCurrentPrices({ ...currentPrices, [market]: currently + price });
+    setCurrentPrices({ ...currentPrices, [market]: price });
   };
 
   return (

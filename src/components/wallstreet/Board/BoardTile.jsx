@@ -35,6 +35,7 @@ const BoardTile = (props) => {
         {whoIsOnTile.map((who) => {
           return (
             <div
+              key={who.player}
               className={`playercount${whoIsOnTile.length} ${who.player}`}
               style={{ backgroundColor: who.color }}
             ></div>
