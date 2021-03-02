@@ -9,7 +9,7 @@ const BoardTile = (props) => {
   const players = props.players;
 
   const tile = tiles.find((tile) => tile.location == props.tileId);
-  tileText = tile.shortText;
+  tileText = tile.adjustment;
 
   players.forEach((player) => {
     if (parseInt(props.tileId) == player.location) {
@@ -47,7 +47,9 @@ const BoardTile = (props) => {
         <div>
           {tile.icon ? <img className="tileIcon" src={tile.icon} /> : null}
         </div>
-        <div>{tile.shortText}</div>
+        <div>
+          {tile.adjustment > 0 ? `+${tile.adjustment}` : tile.adjustment}
+        </div>
       </div>
     </div>
   );

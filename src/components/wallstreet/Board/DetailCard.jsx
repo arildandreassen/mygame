@@ -18,6 +18,12 @@ const DetailCard = (props) => {
   return (
     <div className={classes}>
       <div className="detailHeader">{tile.detailHeader}</div>
+      <div className="detailBody">
+        <div className="bottomBody"></div>
+        <div className="bottomTile">
+          {tile.icon ? <img src={tile.icon} /> : null}
+        </div>
+      </div>
     </div>
   );
 };

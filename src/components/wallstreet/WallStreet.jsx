@@ -47,11 +47,11 @@ const Game = () => {
   const updatePlayerLocation = (roll) => {
     const playerCount = players.length;
     const newPlayers = [...players];
-    const currentPlayerLocation = newPlayers[whosTurn].location;
-    const combined = currentPlayerLocation + roll;
-    const newLocation = combined > 56 ? combined - 56 : combined;
+    const previousLocation = newPlayers[whosTurn].location;
+    const newLocation = previousLocation + roll;
+    const actualLocation = newLocation > 56 ? newLocation - 56 : newLocation;
 
-    newPlayers[whosTurn].location = newLocation;
+    newPlayers[whosTurn].location = actualLocation;
     updatePlayer(newPlayers);
 
     const newWhosTurn = whosTurn !== playerCount - 1 ? whosTurn + 1 : 0;

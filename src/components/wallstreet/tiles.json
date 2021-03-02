@@ -3,392 +3,394 @@
             "location":1,
             "title": "start",
             "icon": null,
-            "shortText": "Start", 
+            "adjustment": "Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":2,
             "title": "Domestic",
             "icon": "up.png",
-            "shortText": "+100", 
-            "detailHeader": "Domestic Markets"
+            "adjustment": 100, 
+            "detailHeader": "Domestic Markets",
+            "detailBody": "up.png"
+
         },
         {
             "location":3,
             "title": "Options",
             "icon": "up.png",
-            "shortText": "Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":4,
             "title": "Int",
             "icon": "down.png",
-            "shortText":"-50", 
+            "adjustment":-50, 
             "detailHeader": "Start Detail"
         },
         {
             "location":5,  
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100,  
             "detailHeader": "Start Detail"
         },
         {
             "location":6,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":7,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":8,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":9,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":10,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":11,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":12,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":13,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":14,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":15,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment": 100, 
             "detailHeader": "Start Detail"
         },
         {
             "location":16,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },     
         {
             "location":17,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":18,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":19,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":20,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":21,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":22,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":23,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":24,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":25,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":26,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":27,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":28,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":29,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":30,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":31,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":32,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":33,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":34,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":35,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":36,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":37,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":38,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":39,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":40,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":41,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":42,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":43,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":44,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":45,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":46,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":47,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":48,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":49,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":50,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":51,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":52,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":53,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":54,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":55,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         },
         {
             "location":56,
             "title": "update!",
             "icon": "up.png",
-            "shortText":"Start", 
+            "adjustment":"Start", 
             "detailHeader": "Start Detail"
         }
     ]
