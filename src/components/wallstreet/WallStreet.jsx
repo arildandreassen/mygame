@@ -34,6 +34,8 @@ const Game = () => {
     options: 250,
   });
 
+  const [rollMarker, setRollMarker] = useState([]);
+
   const addPlayer = () => {
     const id = Math.floor(Math.random() * 100000);
     const name = prompt("what is your name?");
@@ -44,12 +46,28 @@ const Game = () => {
     ]);
   };
 
-  const updatePlayerLocation = (roll) => {
+  const showRollMarker = async (previousLocation, acutalLocation) => {
+    return new Promise((resolve, reject) => {
+      const rollMarker = [];
+      for (let i = previousLocation + 1; i <= acutalLocation; i++) {
+        rollMarker.push(i);
+      }
+      setRollMarker(rollMarker);
+      setTimeout(() => {
+        resolve();
+        setRollMarker([]);
+      }, 1000);
+    });
+  };
+
+  const updatePlayerLocation = async (roll) => {
     const playerCount = players.length;
     const newPlayers = [...players];
     const previousLocation = newPlayers[whosTurn].location;
     const newLocation = previousLocation + roll;
     const actualLocation = newLocation > 56 ? newLocation - 56 : newLocation;
+
+    await showRollMarker(previousLocation, actualLocation);
 
     newPlayers[whosTurn].location = actualLocation;
     updatePlayer(newPlayers);
@@ -74,6 +92,7 @@ const Game = () => {
           currentPrices={currentPrices}
           players={players}
           whosTurn={whosTurn}
+          rollMarker={rollMarker}
         />
       </div>
       <div>

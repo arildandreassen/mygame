@@ -25,6 +25,7 @@ const BottomBoard = (props) => {
         tileId={tile}
         players={props.players}
         whosTurn={props.whosTurn}
+        rollMarker={props.rollMarker}
         onMouseEnter={props.onMouseEnter}
         onMouseLeave={props.onMouseLeave}
       />

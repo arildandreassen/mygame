@@ -23,6 +23,7 @@ const BoardSection = (props) => {
       <TopBoard
         players={props.players}
         whosTurn={props.whosTurn}
+        rollMarker={props.rollMarker}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
@@ -30,6 +31,7 @@ const BoardSection = (props) => {
       <MiddleBoard
         players={props.players}
         whosTurn={props.whosTurn}
+        rollMarker={props.rollMarker}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
@@ -39,6 +41,7 @@ const BoardSection = (props) => {
       <BottomBoard
         players={props.players}
         whosTurn={props.whosTurn}
+        rollMarker={props.rollMarker}
         hoveringTile={hoveringState.tile}
         onMouseEnter={onMouseEnter}
         onMouseLeave={onMouseLeave}
